@@ -1,3 +1,83 @@
+/* Default styles (for mobile first approach) */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  padding: 20px;
+}
+
+/* --- Media Queries for specific screen widths --- */
+
+/* For screen widths 1024px and above */
+@media (min-width: 1024px) {
+  .container {
+    padding: 40px;
+  }
+
+  .header {
+    font-size: 1.5rem;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+/* For screen widths 1440px and above */
+@media (min-width: 1440px) {
+  .container {
+    padding: 60px;
+  }
+
+  .header {
+    font-size: 2rem;
+  }
+
+  .content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+/* For screen widths 1920px and above */
+@media (min-width: 1920px) {
+  .container {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+
+  .header {
+    font-size: 2.5rem;
+  }
+
+  .content {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+
+/* For screen widths 2560px and above */
+@media (min-width: 2560px) {
+  .container {
+    max-width: 2000px;
+    padding: 80px;
+  }
+
+  .header {
+    font-size: 3rem;
+  }
+
+  .content {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
